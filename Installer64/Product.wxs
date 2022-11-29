@@ -6,7 +6,7 @@
 		<?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
 	<?endif ?>
 	
-	<Product Id="56C9BF0B-2257-4339-9995-949622054C9D" Name="DiscordForOffice (32 and 64-bit)" Language="1033" Version="1.2.0" Manufacturer="Leondro Lio" UpgradeCode="2F1EABD1-22C7-4C53-B5B1-15D40180DFFF">
+	<Product Id="56C9BF0B-2257-4339-9995-949622054C9D" Name="DiscordForOffice (32 and 64-bit)" Language="1033" Version="1.2.1" Manufacturer="Cosmii02" UpgradeCode="2F1EABD1-22C7-4C53-B5B1-15D40180DFFF">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MediaTemplate EmbedCab="yes" />
@@ -19,7 +19,7 @@
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="$(var.PlatformProgramFilesFolder)">
-				<Directory Id="Company" Name="Leondro Lio">
+				<Directory Id="Company" Name="Cosmii02">
 					<Directory Id="INSTALLFOLDER" Name="DiscordForOffice" />
 				</Directory>
 			</Directory>
@@ -32,11 +32,6 @@
 				<File Source="$(var.DiscordForExcel.TargetPath)" />
 				<File Source="$(var.DiscordForExcel.TargetPath).manifest" />
 				<File Source="$(var.DiscordForExcel.TargetDir)$(var.DiscordForExcel.TargetName).vsto" />
-
-				<File Source="$(var.DiscordForOutlook.TargetPath)" />
-				<File Source="$(var.DiscordForOutlook.TargetPath).manifest" />
-				<File Source="$(var.DiscordForOutlook.TargetDir)$(var.DiscordForOutlook.TargetName).vsto" />
-				<File Source="$(var.DiscordForOutlook.TargetDir)Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" />
 
 				<File Source="$(var.DiscordForPowerPoint.TargetPath)" />
 				<File Source="$(var.DiscordForPowerPoint.TargetPath).manifest" />

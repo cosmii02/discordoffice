@@ -16,14 +16,13 @@ namespace Shared
             {12, "2007" },
             {14, "2010" },
             {15, "2013" },
-            {16, "2016 or 2019" }
+            {16, "2022" }
         };
 
         private static IDictionary<string, string> Strings = new Dictionary<string, string>()
         {
             {"discordID", "470239659591598091" },
             {"noFile", "No File Open" },
-            {"tabOut", "Not Active"},
             {"welcome", "Welcome Screen" },
             {"editing", "Editing File" },
             {"editingSlide", "Editing Slide" },

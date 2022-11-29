@@ -15,8 +15,8 @@ namespace DiscordForWord
             client.Initialize();
             client.SetPresence(presence);
 
-            this.Application.WindowDeactivate += new ApplicationEvents4_WindowDeactivateEventHandler(
-                Application_WindowDeactivate);
+            //this.Application.WindowDeactivate += new ApplicationEvents4_WindowDeactivateEventHandler(
+            //    Application_WindowDeactivate);
             this.Application.WindowActivate += new ApplicationEvents4_WindowActivateEventHandler(
                 Application_WindowActivate);
             this.Application.DocumentOpen += new ApplicationEvents4_DocumentOpenEventHandler(
@@ -49,18 +49,18 @@ namespace DiscordForWord
             }
         }
 
-        private void Application_WindowDeactivate(Document doc, Window wn)
-        {
-            if (Application.Documents.Count == 1)
-            {
-                presence.Details = Shared.Shared.getString("tabOut");
-                presence.State = null;
-                presence.Party = null;
-                presence.Assets.LargeImageKey = "word_nothing";
-            }
+        //private void Application_WindowDeactivate(Document doc, Window wn)
+        //{
+        //    if (Application.Documents.Count == 1)
+        //    {
+        //        presence.Details = Shared.Shared.getString("tabOut");
+        //        presence.State = null;
+        //        presence.Party = null;
+        //        presence.Assets.LargeImageKey = "word_nothing";
+        //    }
 
-            client.SetPresence(presence);
-        }
+        //    client.SetPresence(presence);
+        //}
 
         private void Application_WindowClose()
         {
@@ -71,10 +71,6 @@ namespace DiscordForWord
             }
             else
             {
-                presence.Details = Shared.Shared.getString("tabOut") + Application.Documents.Count;
-                presence.State = null;
-                presence.Party = null;
-                presence.Assets.LargeImageKey = "word_nothing";
             }
 
             client.SetPresence(presence);

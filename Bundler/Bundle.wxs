@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
-	<Bundle Name="DiscordForOffice" Version="1.2.0" Manufacturer="Leondro Lio" UpgradeCode="53086bb4-e7a1-4266-8cd7-1df3adac5ab0">
+	<Bundle Name="DiscordForOffice" Version="1.2.1" Manufacturer="Cosmii02" UpgradeCode="53086bb4-e7a1-4266-8cd7-1df3adac5ab0">
 		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkSidebarLicense">
 			<bal:WixStandardBootstrapperApplication
 				SuppressOptionsUI="yes"
